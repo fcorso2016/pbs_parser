@@ -3,7 +3,7 @@ import re
 from typing import Optional, Iterator
 
 
-class IniData():
+class IniData:
     def __init__(self, config_path: str):
         with open(config_path, 'r', encoding='utf') as file:
             self.__parse_config(file)
